@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Decision Tree Editor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script>
+      // GitHub Pages SPA 路由修复
+      // 仅在从 404.html 回跳时恢复原始路径；路由前缀由 wouter 的 base 处理
+      (function() {
+        var base = '/decision-tree-editor';
+        var redirect = sessionStorage.getItem('spa_redirect');
+        if (redirect && (redirect === base || redirect.indexOf(base + '/') === 0)) {
+          sessionStorage.removeItem('spa_redirect');
+          window.history.replaceState(null, '', redirect);
+        } else if (redirect) {
+          sessionStorage.removeItem('spa_redirect');
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/decision-tree-editor/assets/index-FuFCobrO.js"></script>
+    <link rel="stylesheet" crossorigin href="/decision-tree-editor/assets/index-WMCF03cD.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+
+</html>
